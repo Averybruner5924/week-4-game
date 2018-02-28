@@ -1,4 +1,4 @@
-  var targetNumber = Math.floor((Math.random() * 100) + 10);;
+var targetNumber = Math.floor((Math.random() * 100) + 10);
 
   $("#number-to-guess").text(targetNumber);
 
@@ -13,12 +13,12 @@
 
     imageCrystal.addClass("crystal-image");
 
-    imageCrystal.attr(src= "assets/images/crystal.jpg")
+    imageCrystal.attr("src","assets/images/crystal.jpg");
    
     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
 
     $("#crystals").append(imageCrystal);
-  }
+  };
 
   $(".crystal-image").on("click", function() {
 
@@ -38,4 +38,3 @@
     }
 
   });
-
